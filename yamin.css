@@ -1,7 +1,7 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-        :root {
+ :root {
             --primary: #4F46E5;
             --primary-dark: #4338CA;
             --secondary: #8B5CF6;
@@ -283,6 +283,7 @@
         .projects {
             padding: 6rem 2rem;
             background: var(--white);
+
         }
 
         .projects-container {
@@ -318,7 +319,7 @@
 
         .project-card {
             background: var(--white);
-            border-radius: 20px;
+            border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
@@ -509,6 +510,8 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    padding: 5px;
+    
 }
 
 .project-image img {
@@ -516,8 +519,9 @@
     height: 100%;
     object-fit: cover; /* Ensures the image covers the container */
     transition: transform 0.3s ease;
+    border-radius: 8px 8px 0 0; /* Rounded corners on the top */
 }
 
 .project-card:hover .project-image img {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.02); /* Zoom effect on hover */
 }
